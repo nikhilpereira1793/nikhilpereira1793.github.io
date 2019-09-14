@@ -1,0 +1,5 @@
+homeLink: /
+navItems:
+  - type : link
+    name : Resume
+    link : resume.html

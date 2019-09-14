@@ -1,0 +1,23 @@
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{{site.data.navigation.homeLink}}">Nikhil Pereira</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      {% for navItem in site.data.navigation.navItems %}
+        {% if navItem.type == 'link' %}
+          {% if page.url contains navItem.link %}
+            <li class="nav-item active">
+          {% else %}
+            <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="{{ navItem.link }}">{{ navItem.name }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
+</header>
