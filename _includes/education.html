@@ -1,10 +1,9 @@
-<h4>Education</h4>
-<ul class="list-unstyled">
+<h4 class="pt-3">Education</h4>
   {% for education in site.data.education.education %}
-    <li>{{education.institution}}</li>
-    <li class="font-weight-lighter">{{education.qualification}}</li>
-    <li class="font-italic font-weight-lighter">{{education.timeline}}</li>
-    <li class="font-weight-lighter">{{education.result}}</li>
-    <hr>
+  <ul class="list-unstyled pt-2">
+      <li>{{education.institution}}</li>
+      <li class="font-weight-lighter">{{education.qualification}}</li>
+      <li class="font-italic font-weight-lighter">{{education.timeline}}</li>
+      <li class="font-weight-lighter">{{education.result}}</li>
+  </ul>
   {% endfor %}
-</ul>

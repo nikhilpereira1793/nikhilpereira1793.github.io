@@ -1,5 +1,6 @@
+<h4 class="pt-3">Work Experience</h4>
 {% for technicalExperience in site.data.technicalExperience.technicalExperiences %}
-<h4>{{technicalExperience.companyName}}</h4>
+<h5 class="pt-3">{{technicalExperience.companyName}}</h5>
   {% for project in technicalExperience.projects %}
   <div class="row">
     <div class="col-10">
@@ -15,6 +16,5 @@
       <li>{{desc.point}}</li>
     {% endfor %}
   </ul>
-  <hr>
   {% endfor %}
 {% endfor %}
