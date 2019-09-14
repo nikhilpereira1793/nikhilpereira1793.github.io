@@ -1,0 +1,7 @@
+<h4>Interests</h4>
+{% assign interests = site.data.interests.interests | split: "," %}
+<ul class="list-unstyled">
+  {% for interest in interests %}
+  <li>{{ interest }}</li>
+  {% endfor %}
+</ul>

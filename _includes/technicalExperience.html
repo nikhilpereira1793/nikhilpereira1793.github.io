@@ -1,0 +1,20 @@
+{% for technicalExperience in site.data.technicalExperience.technicalExperiences %}
+<h3>{{technicalExperience.companyName}}</h3>
+  {% for project in technicalExperience.projects %}
+  <div class="row">
+    <div class="col-10">
+      <p class="font-italic font-weight-lighter">{{project.timeline}}</p>
+    </div>
+    <div class="col-2">
+      <p class="font-italic font-weight-lighter">{{project.location}}</p>
+    </div>
+  </div>
+  <p>Client: {{project.client}}</p>
+  <ul>
+    {% for desc in project.descriptionPoints %}
+      <li>{{desc.point}}</li>
+    {% endfor %}
+  </ul>
+  <hr>
+  {% endfor %}
+{% endfor %}

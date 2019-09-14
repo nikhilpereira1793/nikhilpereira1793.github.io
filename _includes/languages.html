@@ -1,0 +1,7 @@
+<h4>Languages</h4>
+{% assign languages = site.data.languages.languages | split: "," %}
+<ul class="list-unstyled">
+  {% for language in languages %}
+  <li>{{ language }}</li>
+  {% endfor %}
+</ul>
