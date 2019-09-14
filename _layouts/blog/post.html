@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="row pt-3 p-2">
+  <div class="col-12">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date_to_string }}</p>
+    {% for tag in page.tags %}
+    <a href="{{tag | replace: " ","-" | prepend: site.tagurl | prepend: site.baseurl}}">#{{ tag }}</a>
+    {% endfor %}
+    <hr>
+    {{ content }}
+  </div>
+</div>

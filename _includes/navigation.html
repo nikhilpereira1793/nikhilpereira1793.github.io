@@ -8,12 +8,12 @@
     <ul class="navbar-nav">
       {% for navItem in site.data.navigation.navItems %}
         {% if navItem.type == 'link' %}
-          {% if page.url contains navItem.link %}
+          {% if page.url contains navItem.href %}
             <li class="nav-item active">
           {% else %}
             <li class="nav-item">
           {% endif %}
-            <a class="nav-link" href="{{ navItem.link }}">{{ navItem.name }}</a>
+            <a class="nav-link" href="{{ navItem.href | prepend: site.baseurl}}">{{ navItem.name }}</a>
           </li>
         {% endif %}
       {% endfor %}

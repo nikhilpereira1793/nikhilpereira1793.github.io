@@ -1,0 +1,44 @@
+---
+title: Blog
+---
+<div class="row">
+  {% for post in paginator.posts %}
+  <div class="col-sm-12 p-4">
+    <h4>{{ post.title }}</h4>
+    <p>{{post.date | date_to_string}}</p>
+    <p>{{ post.excerpt }}</p>
+    <a href="{{ post.url | prepend: site.baseurl}}">Read More</a>
+  </div>
+  {% endfor %}
+</div>
+{% include blog/pagination.html %}
+
+<div class="row p-4">
+  <div class="col-12">
+    <ul class="pagination">
+      {% if paginator.previous_page %}
+        <li class="page-item">
+          <a class="page-link" href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+        </li>
+      {% else %}
+        <li class="page-item disabled">
+          <a class="page-link" href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+        </li>
+      {% endif %}
+      <li class="page-item disabled">
+        <a class="page-link">
+          Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        </a>
+      </li>
+      {% if paginator.next_page %}
+        <li class="page-item">
+          <a class="page-link" href="{{ paginator.next_page_path }}" class="next">Next</a>
+        </li>
+      {% else %}
+        <li class="page-item disabled">
+          <a class="page-link" href="{{ paginator.previous_page_path }}" class="previous">Next</a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>

@@ -2,4 +2,7 @@ homeLink: /
 navItems:
   - type : link
     name : Resume
-    link : resume.html
+    href : /resume.html
+  - type : link
+    name : Blog
+    href : /blog

@@ -1,17 +1,16 @@
 ---
-layout: default
 title: Resume
 ---
-{% include resumeHead.html %}
+{% include resume/resumeHead.html %}
 <div class="row">
   <div class="col-lg-10 col-sm-12">
-    {% include technicalExperience.html %}
-    {% include certificates.html %}
-    {% include education.html %}
+    {% include resume/technicalExperience.html %}
+    {% include resume/certificates.html %}
+    {% include resume/education.html %}
   </div>
-  <div class="col-2">
-    {% include skills.html %}
-    {% include languages.html %}
-    {% include interests.html %}
+  <div class="col-md-2 col-sm-12">
+    {% include resume/skills.html %}
+    {% include resume/languages.html %}
+    {% include resume/interests.html %}
   </div>
 </div>
