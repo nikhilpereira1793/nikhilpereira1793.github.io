@@ -113,5 +113,5 @@ dependencies. It is difficult to serialize objects with circular dependencies. B
 ---
 
 #### References
-- https://tomassetti.me/parsing-in-java/
-- https://www.baeldung.com/jgrapht
+- [java parser](https://tomassetti.me/parsing-in-java/)
+- [jgrapht](https://www.baeldung.com/jgrapht)

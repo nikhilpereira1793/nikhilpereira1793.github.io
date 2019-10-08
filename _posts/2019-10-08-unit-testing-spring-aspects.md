@@ -3,6 +3,8 @@ tags : [spring aop, spring, java, aspect oriented programming]
 ---
  This blog is about unit testing aspects in Spring. Spring by default uses the JDK Dynamic proxy. To use the CGLIB proxy we need to set Proxy Target Class flag as true `factory.setProxyTargetClass(true); `. JDK Dynamic proxies can only proxy interfaces. CGLIB proxies are actual subclasses of the proxied class.
 
+#### Code Snippets
+
 ``` java
 @RunWith(MockitoJUnitRunner.class)
 public class AspectTestClass {
@@ -37,5 +39,5 @@ public class AspectTestClass {
 }
 ```
 ### References
-- https://stackoverflow.com/questions/16047829/proxy-cannot-be-cast-to-class
-- http://insufficientinformation.blogspot.com/2007/12/spring-dynamic-proxies-vs-cglib-proxies.html?_sm_au_=iVV72QFBVrdBRnQ5
+- [Proxy on non-interface class](https://stackoverflow.com/questions/16047829/proxy-cannot-be-cast-to-class)
+- [Dynamic vs CGLib proxies](http://insufficientinformation.blogspot.com/2007/12/spring-dynamic-proxies-vs-cglib-proxies.html?_sm_au_=iVV72QFBVrdBRnQ5)
