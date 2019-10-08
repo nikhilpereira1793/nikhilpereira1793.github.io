@@ -1,9 +1,7 @@
 ---
 tags : [spring aop, spring, java, aspect oriented programming]
 ---
-- Spring by default uses the JDK Dynamic proxy. To use the CGLIB proxy we need to set Proxy Target Class flag as true `factory.setProxyTargetClass(true); `
-- JDK Dynamic proxies can only proxy interfaces
-- CGLIB proxies are actual subclasses of the proxied class
+ This blog is about unit testing aspects in Spring. Spring by default uses the JDK Dynamic proxy. To use the CGLIB proxy we need to set Proxy Target Class flag as true `factory.setProxyTargetClass(true); `. JDK Dynamic proxies can only proxy interfaces. CGLIB proxies are actual subclasses of the proxied class.
 
 ``` java
 @RunWith(MockitoJUnitRunner.class)
