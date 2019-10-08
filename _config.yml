@@ -5,11 +5,6 @@ plugins:
 paginate: 3
 paginate_path: "/blog/:num/"
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
 defaults:
   - scope:
       path: ""
