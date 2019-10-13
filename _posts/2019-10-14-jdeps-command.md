@@ -28,10 +28,12 @@ sample-1.0.0.jar -> target/lib/xstream-1.4.5.jar
       -> java.lang.StringBuffer  
 ```
 - We can also create visual graphs in PNG format of the dependencies using graphwiz on the dot files generated using the jdeps command.
+
 ```
 jdeps -verbose:class -e '.*.slf4j.*.' -dotoutput . -classpath 'target/lib/*' target/sample-1.0.0.jar
 ```
 - We are filtering the classes that depend on slf4j and creating a dot file in the current directory.
+
 ```
 // using graphwiz convert dot file to PNG
 dot -Tpng sample-1.0.0.jar.dot -o DocName.png
