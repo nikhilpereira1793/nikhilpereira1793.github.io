@@ -54,7 +54,6 @@ List<Node> instanceVarTypes = compilationUnit.findAll(FieldDeclaration.class)
 
 ##### Create Directed Graph using Map
 ```Java
-
 Graph<String, DefaultEdge> graph = new DefaultDirectedGraph<>(DefaultEdge.class);		
 //add vertices
 classNametoInstanceVarTypesMap.keySet().forEach(className ->{			
@@ -76,7 +75,6 @@ classNametoInstanceVarTypesMap
 
 ##### Detect cycles for each vertex in the graph using JGraphT CycleDetector and add the cycles to a map.
 ```Java
-
 Map<String, AsSubgraph<String, DefaultEdge>> cyclesForEveryVertexMap = new HashMap<>();
 CycleDetector<String, DefaultEdge> cycleDetector = new CycleDetector<>(classReferencesGraph);
 cycleDetector.findCycles().forEach(v -> {
@@ -93,7 +91,6 @@ cycleDetector.findCycles().forEach(v -> {
 ##### Create PNG Image of a graph using jgrapht-ext library.
 
 ```Java
-
 new File(outputDirectoryPath).mkdirs();
 File imgFile = new File(outputDirectoryPath+"/graph" + imageName + ".png");
 if(imgFile.createNewFile()) {
