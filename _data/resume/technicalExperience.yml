@@ -6,7 +6,9 @@ technicalExperiences:
         location: Bangalore
         descriptionPoints:
           - point: Migrated a Java application from Ant to Maven and upgraded the libraries and frameworks.
-          - point: Developed programs to replace code, detect circular dependencies and generate templates using JavaParser library. Developed programs to replace code, detect circular dependencies and generate templates using JavaParser library.
+          - point: Improved admin tool app security using Spring Security.
+          - point: Automated testing by making test collections in Postman.
+          - point: Developed programs to replace code, detect circular dependencies and generate templates using JavaParser library.
           - point: Developed admin tools and supported enhancements and fixed issues every two week sprint cycle.
       - timeline: 01/2018 – 04/2018
         client: A Global Marketplace Platform for Employment
@@ -16,6 +18,7 @@ technicalExperiences:
           - point: Helped create a microservice for terms of services and contracts consent management.
           - point: Wrote unit tests using Mockito and JUnit. Tested endpoints using Postman tool.
       - timeline: 01/2018 – 04/2018
+        client: In-house project
         location: Bangalore
         descriptionPoints:
           - point: Developed a request tracing plugin tool for Spring Web MVC applications. The tool adds an endpoint test page and also generates a sequence diagram of the request trace.
